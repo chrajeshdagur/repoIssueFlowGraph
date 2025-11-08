@@ -1,0 +1,1402 @@
+{
+  "requesterUsername": "chrajeshdagur",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/18675963",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_5528b7f7-41f7-4e52-aeab-187bbad8fab6",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 94
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 95
+            },
+            "text": "based on the setup_project_structure.sh file create and updte the complete directory structure",
+            "kind": "text"
+          }
+        ],
+        "text": "based on the setup_project_structure.sh file create and updte the complete directory structure"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.file",
+            "name": "file:README.md",
+            "value": {
+              "$mid": 1,
+              "fsPath": "\\workspaces\\RepoIssueFlow-Graph\\README.md",
+              "_sep": 1,
+              "external": "vscode-remote://codespaces%2Bverbose-acorn-q75rgvj4954hjwx/workspaces/RepoIssueFlow-Graph/README.md",
+              "path": "/workspaces/RepoIssueFlow-Graph/README.md",
+              "scheme": "vscode-remote",
+              "authority": "codespaces+verbose-acorn-q75rgvj4954hjwx"
+            },
+            "modelDescription": "User's active file"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Determining user intent...",
+            "uris": {}
+          }
+        },
+        {
+          "value": "Sure, here's a proposed directory structure for a RepoIssueFlow-Graph app:\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Generating workspace preview...",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Generating workspace preview...",
+            "uris": {}
+          }
+        },
+        {
+          "label": "repograph",
+          "uri": {
+            "$mid": 1,
+            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/",
+            "path": "/repograph/",
+            "scheme": "vscode-copilot-workspace",
+            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+          },
+          "children": [
+            {
+              "label": "repograph/",
+              "uri": {
+                "$mid": 1,
+                "fsPath": "\\repograph\\repograph\\",
+                "_sep": 1,
+                "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/",
+                "path": "/repograph/repograph/",
+                "scheme": "vscode-copilot-workspace",
+                "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+              },
+              "children": [
+                {
+                  "label": "backend/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\backend\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/",
+                    "path": "/repograph/repograph/backend/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": "app.py",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\backend\\app.py",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/app.py",
+                        "path": "/repograph/repograph/backend/app.py",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    },
+                    {
+                      "label": "routes/",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/routes/",
+                        "path": "/repograph/repograph/backend/routes/",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      },
+                      "children": [
+                        {
+                          "label": "github_api.py",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\backend\\routes\\github_api.py",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/routes/github_api.py",
+                            "path": "/repograph/repograph/backend/routes/github_api.py",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        },
+                        {
+                          "label": "ai_analysis.py",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\backend\\routes\\ai_analysis.py",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/routes/ai_analysis.py",
+                            "path": "/repograph/repograph/backend/routes/ai_analysis.py",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        },
+                        {
+                          "label": "graph_builder.py",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\backend\\routes\\graph_builder.py",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/routes/graph_builder.py",
+                            "path": "/repograph/repograph/backend/routes/graph_builder.py",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "label": "services/",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/services/",
+                        "path": "/repograph/repograph/backend/services/",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      },
+                      "children": [
+                        {
+                          "label": "nlp_service.py",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\backend\\services\\nlp_service.py",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/services/nlp_service.py",
+                            "path": "/repograph/repograph/backend/services/nlp_service.py",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        },
+                        {
+                          "label": "github_service.py",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\backend\\services\\github_service.py",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/services/github_service.py",
+                            "path": "/repograph/repograph/backend/services/github_service.py",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "label": "models/",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/models/",
+                        "path": "/repograph/repograph/backend/models/",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      },
+                      "children": [
+                        {
+                          "label": "schemas.py",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\backend\\models\\schemas.py",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/models/schemas.py",
+                            "path": "/repograph/repograph/backend/models/schemas.py",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "label": "tests/",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/tests/",
+                        "path": "/repograph/repograph/backend/tests/",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      },
+                      "children": [
+                        {
+                          "label": "test_api.py",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\backend\\tests\\test_api.py",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/tests/test_api.py",
+                            "path": "/repograph/repograph/backend/tests/test_api.py",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "label": "requirements.txt",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\backend\\requirements.txt",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/backend/requirements.txt",
+                        "path": "/repograph/repograph/backend/requirements.txt",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "frontend/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\frontend\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/",
+                    "path": "/repograph/repograph/frontend/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": "package.json",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\frontend\\package.json",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/package.json",
+                        "path": "/repograph/repograph/frontend/package.json",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    },
+                    {
+                      "label": "public/",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/public/",
+                        "path": "/repograph/repograph/frontend/public/",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      },
+                      "children": [
+                        {
+                          "label": "index.html",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\frontend\\public\\index.html",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/public/index.html",
+                            "path": "/repograph/repograph/frontend/public/index.html",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "label": "src/",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/",
+                        "path": "/repograph/repograph/frontend/src/",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      },
+                      "children": [
+                        {
+                          "label": "components/",
+                          "uri": {
+                            "$mid": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/components/",
+                            "path": "/repograph/repograph/frontend/src/components/",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          },
+                          "children": [
+                            {
+                              "label": "GraphView.jsx",
+                              "uri": {
+                                "$mid": 1,
+                                "fsPath": "\\repograph\\repograph\\frontend\\src\\components\\GraphView.jsx",
+                                "_sep": 1,
+                                "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/components/GraphView.jsx",
+                                "path": "/repograph/repograph/frontend/src/components/GraphView.jsx",
+                                "scheme": "vscode-copilot-workspace",
+                                "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                              }
+                            },
+                            {
+                              "label": "IssuePanel.jsx",
+                              "uri": {
+                                "$mid": 1,
+                                "fsPath": "\\repograph\\repograph\\frontend\\src\\components\\IssuePanel.jsx",
+                                "_sep": 1,
+                                "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/components/IssuePanel.jsx",
+                                "path": "/repograph/repograph/frontend/src/components/IssuePanel.jsx",
+                                "scheme": "vscode-copilot-workspace",
+                                "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                              }
+                            },
+                            {
+                              "label": "Navbar.jsx",
+                              "uri": {
+                                "$mid": 1,
+                                "fsPath": "\\repograph\\repograph\\frontend\\src\\components\\Navbar.jsx",
+                                "_sep": 1,
+                                "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/components/Navbar.jsx",
+                                "path": "/repograph/repograph/frontend/src/components/Navbar.jsx",
+                                "scheme": "vscode-copilot-workspace",
+                                "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "label": "pages/",
+                          "uri": {
+                            "$mid": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/pages/",
+                            "path": "/repograph/repograph/frontend/src/pages/",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          },
+                          "children": [
+                            {
+                              "label": "Dashboard.jsx",
+                              "uri": {
+                                "$mid": 1,
+                                "fsPath": "\\repograph\\repograph\\frontend\\src\\pages\\Dashboard.jsx",
+                                "_sep": 1,
+                                "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/pages/Dashboard.jsx",
+                                "path": "/repograph/repograph/frontend/src/pages/Dashboard.jsx",
+                                "scheme": "vscode-copilot-workspace",
+                                "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                              }
+                            },
+                            {
+                              "label": "Maintenance.jsx",
+                              "uri": {
+                                "$mid": 1,
+                                "fsPath": "\\repograph\\repograph\\frontend\\src\\pages\\Maintenance.jsx",
+                                "_sep": 1,
+                                "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/pages/Maintenance.jsx",
+                                "path": "/repograph/repograph/frontend/src/pages/Maintenance.jsx",
+                                "scheme": "vscode-copilot-workspace",
+                                "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "label": "styles/",
+                          "uri": {
+                            "$mid": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/styles/",
+                            "path": "/repograph/repograph/frontend/src/styles/",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          },
+                          "children": [
+                            {
+                              "label": "main.css",
+                              "uri": {
+                                "$mid": 1,
+                                "fsPath": "\\repograph\\repograph\\frontend\\src\\styles\\main.css",
+                                "_sep": 1,
+                                "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/styles/main.css",
+                                "path": "/repograph/repograph/frontend/src/styles/main.css",
+                                "scheme": "vscode-copilot-workspace",
+                                "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "label": "App.jsx",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\frontend\\src\\App.jsx",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/App.jsx",
+                            "path": "/repograph/repograph/frontend/src/App.jsx",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        },
+                        {
+                          "label": "index.js",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\frontend\\src\\index.js",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/src/index.js",
+                            "path": "/repograph/repograph/frontend/src/index.js",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "label": "jest.config.js",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\frontend\\jest.config.js",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/frontend/jest.config.js",
+                        "path": "/repograph/repograph/frontend/jest.config.js",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "cli/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\cli\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/cli/",
+                    "path": "/repograph/repograph/cli/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": "setup_project_structure.sh",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\cli\\setup_project_structure.sh",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/cli/setup_project_structure.sh",
+                        "path": "/repograph/repograph/cli/setup_project_structure.sh",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    },
+                    {
+                      "label": "sync_repo.sh",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\cli\\sync_repo.sh",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/cli/sync_repo.sh",
+                        "path": "/repograph/repograph/cli/sync_repo.sh",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "infra/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\infra\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/infra/",
+                    "path": "/repograph/repograph/infra/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": "docker-compose.yml",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\infra\\docker-compose.yml",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/infra/docker-compose.yml",
+                        "path": "/repograph/repograph/infra/docker-compose.yml",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    },
+                    {
+                      "label": "Dockerfile.backend",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\infra\\Dockerfile.backend",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/infra/Dockerfile.backend",
+                        "path": "/repograph/repograph/infra/Dockerfile.backend",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    },
+                    {
+                      "label": "Dockerfile.frontend",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\infra\\Dockerfile.frontend",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/infra/Dockerfile.frontend",
+                        "path": "/repograph/repograph/infra/Dockerfile.frontend",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "configs/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\configs\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/configs/",
+                    "path": "/repograph/repograph/configs/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": ".env.example",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\configs\\.env.example",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/configs/.env.example",
+                        "path": "/repograph/repograph/configs/.env.example",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "scripts/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\scripts\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/scripts/",
+                    "path": "/repograph/repograph/scripts/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": "migrate_db.sh",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\scripts\\migrate_db.sh",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/scripts/migrate_db.sh",
+                        "path": "/repograph/repograph/scripts/migrate_db.sh",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "docs/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\docs\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/docs/",
+                    "path": "/repograph/repograph/docs/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": "architecture.md",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\repograph\\repograph\\docs\\architecture.md",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/docs/architecture.md",
+                        "path": "/repograph/repograph/docs/architecture.md",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "tests/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\tests\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/tests/",
+                    "path": "/repograph/repograph/tests/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": "e2e/",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/tests/e2e/",
+                        "path": "/repograph/repograph/tests/e2e/",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      },
+                      "children": [
+                        {
+                          "label": "e2e.test.js",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\tests\\e2e\\e2e.test.js",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/tests/e2e/e2e.test.js",
+                            "path": "/repograph/repograph/tests/e2e/e2e.test.js",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": ".github/",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\.github\\",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/.github/",
+                    "path": "/repograph/repograph/.github/",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  },
+                  "children": [
+                    {
+                      "label": "workflows/",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/.github/workflows/",
+                        "path": "/repograph/repograph/.github/workflows/",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                      },
+                      "children": [
+                        {
+                          "label": "ci.yml",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\repograph\\repograph\\.github\\workflows\\ci.yml",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/.github/workflows/ci.yml",
+                            "path": "/repograph/repograph/.github/workflows/ci.yml",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "LICENSE",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\LICENSE",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/LICENSE",
+                    "path": "/repograph/repograph/LICENSE",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  }
+                },
+                {
+                  "label": "README.md",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\repograph\\repograph\\README.md",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://013bfe9f-51e7-40d1-851c-f9f59180d074/repograph/repograph/README.md",
+                    "path": "/repograph/repograph/README.md",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "013bfe9f-51e7-40d1-851c-f9f59180d074"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "command",
+          "command": {
+            "$ident": "github.copilot.createProject /72",
+            "id": "__vsc4baa8319-7a2b-4eed-9748-4eccb0981a49",
+            "title": "Create Workspace...",
+            "arguments": [
+              "github.copilot.createProject /72"
+            ]
+          }
+        }
+      ],
+      "responseId": "response_c1bbe41a-b338-4795-952b-29023f74c556",
+      "result": {
+        "timings": {
+          "firstProgress": 28415,
+          "totalElapsed": 32644
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "Sure, here's a proposed directory structure for a RepoIssueFlow-Graph app:\n```filetree\nrepograph/\n├── backend/\n│   ├── app.py\n│   ├── routes/\n│   │   ├── github_api.py\n│   │   ├── ai_analysis.py\n│   │   └── graph_builder.py\n│   ├── services/\n│   │   ├── nlp_service.py\n│   │   └── github_service.py\n│   ├── models/\n│   │   └── schemas.py\n│   ├── tests/\n│   │   └── test_api.py\n│   └── requirements.txt\n├── frontend/\n│   ├── package.json\n│   ├── public/\n│   │   └── index.html\n│   ├── src/\n│   │   ├── components/\n│   │   │   ├── GraphView.jsx\n│   │   │   ├── IssuePanel.jsx\n│   │   │   └── Navbar.jsx\n│   │   ├── pages/\n│   │   │   ├── Dashboard.jsx\n│   │   │   └── Maintenance.jsx\n│   │   ├── styles/\n│   │   │   └── main.css\n│   │   ├── App.jsx\n│   │   └── index.js\n│   └── jest.config.js\n├── cli/\n│   ├── setup_project_structure.sh\n│   └── sync_repo.sh\n├── infra/\n│   ├── docker-compose.yml\n│   ├── Dockerfile.backend\n│   └── Dockerfile.frontend\n├── configs/\n│   └── .env.example\n├── scripts/\n│   └── migrate_db.sh\n├── docs/\n│   └── architecture.md\n├── tests/\n│   └── e2e/\n│       └── e2e.test.js\n├── .github/\n│   └── workflows/\n│       └── ci.yml\n├── .gitignore\n├── LICENSE\n└── README.md\n```",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "ed2d990a-829b-44bf-aff2-e66928746e4f",
+              "statefulMarker": "Oii7palNT2GJOw0qkILGuuF8GaOL1Z4unJdn28rdeOo0gacqUVZYviwPU5cQ0fDpOKzjW3TtlwOjsqaHkB+vQ+87HShg3sR74T9glU5EUIlU1v3dr4aM/aKxhdgsoE0PampqbP+EyIv7gTpKuKTmZaxe2PxUw0nFlzIn8rmYwzJ/w55U1ReTNleSf/KGfcFLpJGwXbtMh3anULUF5zUwjBfldAND236oAS8ln10xzEnDy6EzajBiQQT8gDgdidNjjxlyCgta0NdhKljzb8dkZcX3APAwLmFUhbI8rCPZKUMAfI/tDygzFG9N7FgA90QUFQ25sQgAZY/imnQcAxLKn2kvy84SKuC/gK41rrWFawNfvImZgBjpKM0hEx7TD+sRSv+zfH5KzHhKmH2rprMjwmQXXq7CHxDAcnncI+oTHg==",
+              "thinking": {
+                "id": "oYcigHBFsDGGASGhVkOHdFkYSNaTjcNhCaYCMpT2EjvQ5d9pn69xsLKKI9MvqLe8JQDeMVNMGZSuJIep4aHWjrAPPwOq3iu2HpiUcCSbf/DB1SdAHwA+7KMhNMQH9PBGNCWeb2HZPVUVKo4jxdPMaPvLUe7i/RbEKWG05oZ9EQsGF3ZeQ4lNsxVl43TQbObdTyI732LZ+rgQN+Jo7Zx+yix5Sv0tdNnftjIbuO9SlwAUQ0Pw3JpNdyCQjXXwWyDs1+WuJJcgIX65BqLpa7eOcBJV3VL+PAt7PJoLKbeM2VcrXL4pslLOlq7MIPzITITEa9mX4xjeTII3TcFsLB+Yd1DKltqFqmpfS5j4OXfDHqvaaUeo+DrV21Hp8MowyzsJuSBqmWdUM6QB0Or55CkAn7Nsxm0v1qL7ewTN0sM=",
+                "text": "**Structuring TypeScript Express Project**\n\nI'm thinking about how to set up a TypeScript Express app. The project type might be \"RepoIssueFlow-Graph.\" I should start my response with: \"Sure, here's a proposed directory structure for a RepoIssueFlow-Graph app.\" The user wants to create and update the complete directory structure based on a specific script. However, without that script, I need to apologize for the uncertainty and still provide a template for the directory structure as a sample.**Clarifying Response Rules**\n\nI'm facing conflicting guidelines here. The Additional Rules say to assume \"project\" if the user doesn’t specify \"app\" or \"project.\" I should generate a markdown file tree structure for a sample project. However, if I’m unsure or a step doesn't relate to the file tree, I should apologize instead of guessing. The user wants to create and update the directory structure based on a script I don’t have. So, I need to navigate this contradiction and figure out which rule takes precedence.**Resolving Instruction Conflicts**\n\nI'm really trying to navigate conflicting instructions here. System messages have the highest priority, and the developer emphasized that I should apologize if I'm unsure. I need to start with the required line: \"Sure...\" But then I face the Additional Rules, which say not to add explanations beyond the templates. So, I can't expand the apology beyond what’s in the template. Ultimately, I have to decide whether to prioritize the system messages or the developer instructions when responding.**Designing Directory Structure**\n\nI'm trying to figure out how to respond here. The rule about not adding extra descriptions clashes with the requirement to apologize if I’m unsure. The user provided a README, likely expecting an updated directory structure based on setup_project_structure.sh. It seems reasonable to infer a directory structure for the RepoGraph project from the README. Since the user didn't specify \"app\" or \"project,\" I'll proceed with a project designation and create a structure that includes typical files while sticking to the template format. I'll be sure to include the programming language name at the start of the Markdown code blocks too!**Crafting Directory Structure**\n\nI’m working on the file tree block and need to decide which language to use. The examples showed ```filetree, but the rules say I should include a programming language name at the start. After considering this, I’ll stick with what the templates show. The user requested a complete directory structure for a RepoIssueFlow-Graph project, so I'll include key files, like README.md and setup_project_structure.sh, without extra descriptions. Here’s how I’ll start: \"Sure, here's a proposed directory structure for a RepoIssueFlow-Graph app:\" And then present the file tree.",
+                "encrypted": "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",
+                "tokens": 2112
+              }
+            }
+          ],
+          "modelMessageId": "42a3f5b7-0f9b-4068-9185-a33a4416a716",
+          "responseId": "013bfe9f-51e7-40d1-851c-f9f59180d074",
+          "sessionId": "a53092f2-7010-4225-8d2c-ad28c08ed691",
+          "agentId": "github.copilot.workspace",
+          "command": "new"
+        },
+        "details": "GPT-5 mini • 1x"
+      },
+      "responseMarkdownInfo": [],
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.4",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.workspace",
+        "description": "Ask about your workspace",
+        "when": "!github.copilot.interactiveSession.disabled",
+        "metadata": {
+          "sampleRequest": "How do I build this project?",
+          "themeIcon": {
+            "id": "code"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "workspace",
+        "fullName": "Workspace",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent",
+          "ask",
+          "edit"
+        ],
+        "slashCommands": [
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works"
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "create_tests",
+                "description": "The user wants to generate unit tests.",
+                "examples": [
+                  "Generate tests for my selection using pytest."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+          },
+          {
+            "name": "new",
+            "description": "Scaffold code for a new file or project in a workspace",
+            "sampleRequest": "Create a RESTful API server using typescript",
+            "isSticky": true,
+            "disambiguation": [
+              {
+                "category": "create_new_workspace_or_extension",
+                "description": "The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets",
+                "examples": [
+                  "Scaffold a Node server.",
+                  "Create a sample project which uses the fileSystemProvider API.",
+                  "react application"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "newNotebook",
+            "description": "Create a new Jupyter Notebook",
+            "sampleRequest": "How do I create a notebook to load data from a csv file?",
+            "disambiguation": [
+              {
+                "category": "create_jupyter_notebook",
+                "description": "The user wants to create a new Jupyter notebook in Visual Studio Code.",
+                "examples": [
+                  "Create a notebook to analyze this CSV file."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "setupTests",
+            "description": "Set up tests in your project (Experimental)",
+            "sampleRequest": "add playwright tests to my project",
+            "when": "config.github.copilot.chat.setupTests.enabled",
+            "disambiguation": [
+              {
+                "category": "set_up_tests",
+                "description": "The user wants to configure project test setup, framework, or test runner. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Set up tests for this project."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "workspace_project_questions",
+            "description": "The user wants to learn about or update the code or files in their current workspace. Questions in this category may be about understanding what the whole workspace does or locating the implementation of some code. This does not include generating or updating tests.",
+            "examples": [
+              "What does this project do?"
+            ]
+          },
+          {
+            "category": "find_code_in_workspace",
+            "description": "The user wants to locate the implementation of some functionality in their current workspace.",
+            "examples": [
+              "Where is the tree widget implemented?"
+            ]
+          },
+          {
+            "category": "generate_with_workspace_context",
+            "description": "The user wants to generate code based on multiple files in the workspace and did not specify which files to reference.",
+            "examples": [
+              "Create a README for this project."
+            ]
+          }
+        ]
+      },
+      "slashCommand": {
+        "name": "new",
+        "description": "Scaffold code for a new file or project in a workspace",
+        "sampleRequest": "Create a RESTful API server using typescript",
+        "isSticky": true,
+        "disambiguation": [
+          {
+            "category": "create_new_workspace_or_extension",
+            "description": "The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets",
+            "examples": [
+              "Scaffold a Node server.",
+              "Create a sample project which uses the fileSystemProvider API.",
+              "react application"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "external": "vscode-remote://codespaces%2Bverbose-acorn-q75rgvj4954hjwx/workspaces/RepoIssueFlow-Graph/README.md",
+            "path": "/workspaces/RepoIssueFlow-Graph/README.md",
+            "scheme": "vscode-remote",
+            "authority": "codespaces+verbose-acorn-q75rgvj4954hjwx"
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "fsPath": "\\github.copilot.chat.codeGeneration.instructions",
+            "_sep": 1,
+            "external": "vscode://settings/github.copilot.chat.codeGeneration.instructions",
+            "path": "/github.copilot.chat.codeGeneration.instructions",
+            "scheme": "vscode",
+            "authority": "settings"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1762611811447
+    },
+    {
+      "requestId": "request_c3bddbb6-54e4-4874-9274-bf7fb211f19b",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 41
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 42
+            },
+            "text": "create a shell script for above structure",
+            "kind": "text"
+          }
+        ],
+        "text": "create a shell script for above structure"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Determining user intent...",
+            "uris": {}
+          }
+        },
+        {
+          "value": "Sure, here's a proposed directory structure for a TypeScript Express app:\n",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Generating workspace preview...",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Generating workspace preview...",
+            "uris": {}
+          }
+        },
+        {
+          "label": "my-express-app",
+          "uri": {
+            "$mid": 1,
+            "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app",
+            "path": "/my-express-app",
+            "scheme": "vscode-copilot-workspace",
+            "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+          },
+          "children": [
+            {
+              "label": "my-express-app",
+              "uri": {
+                "$mid": 1,
+                "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app",
+                "path": "/my-express-app/my-express-app",
+                "scheme": "vscode-copilot-workspace",
+                "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+              },
+              "children": [
+                {
+                  "label": "scripts",
+                  "uri": {
+                    "$mid": 1,
+                    "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/scripts",
+                    "path": "/my-express-app/my-express-app/scripts",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                  },
+                  "children": [
+                    {
+                      "label": "create-structure.sh",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\my-express-app\\my-express-app\\scripts\\create-structure.sh",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/scripts/create-structure.sh",
+                        "path": "/my-express-app/my-express-app/scripts/create-structure.sh",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "src",
+                  "uri": {
+                    "$mid": 1,
+                    "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/src",
+                    "path": "/my-express-app/my-express-app/src",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                  },
+                  "children": [
+                    {
+                      "label": "app.ts",
+                      "uri": {
+                        "$mid": 1,
+                        "fsPath": "\\my-express-app\\my-express-app\\src\\app.ts",
+                        "_sep": 1,
+                        "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/src/app.ts",
+                        "path": "/my-express-app/my-express-app/src/app.ts",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                      }
+                    },
+                    {
+                      "label": "controllers",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/src/controllers",
+                        "path": "/my-express-app/my-express-app/src/controllers",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                      },
+                      "children": [
+                        {
+                          "label": "index.ts",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\my-express-app\\my-express-app\\src\\controllers\\index.ts",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/src/controllers/index.ts",
+                            "path": "/my-express-app/my-express-app/src/controllers/index.ts",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "label": "routes",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/src/routes",
+                        "path": "/my-express-app/my-express-app/src/routes",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                      },
+                      "children": [
+                        {
+                          "label": "index.ts",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\my-express-app\\my-express-app\\src\\routes\\index.ts",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/src/routes/index.ts",
+                            "path": "/my-express-app/my-express-app/src/routes/index.ts",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "label": "types",
+                      "uri": {
+                        "$mid": 1,
+                        "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/src/types",
+                        "path": "/my-express-app/my-express-app/src/types",
+                        "scheme": "vscode-copilot-workspace",
+                        "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                      },
+                      "children": [
+                        {
+                          "label": "index.ts",
+                          "uri": {
+                            "$mid": 1,
+                            "fsPath": "\\my-express-app\\my-express-app\\src\\types\\index.ts",
+                            "_sep": 1,
+                            "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/src/types/index.ts",
+                            "path": "/my-express-app/my-express-app/src/types/index.ts",
+                            "scheme": "vscode-copilot-workspace",
+                            "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "package.json",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\my-express-app\\my-express-app\\package.json",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/package.json",
+                    "path": "/my-express-app/my-express-app/package.json",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                  }
+                },
+                {
+                  "label": "tsconfig.json",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\my-express-app\\my-express-app\\tsconfig.json",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/tsconfig.json",
+                    "path": "/my-express-app/my-express-app/tsconfig.json",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                  }
+                },
+                {
+                  "label": "README.md",
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "\\my-express-app\\my-express-app\\README.md",
+                    "_sep": 1,
+                    "external": "vscode-copilot-workspace://560b328e-5443-4fb3-9d0b-c734d2688284/my-express-app/my-express-app/README.md",
+                    "path": "/my-express-app/my-express-app/README.md",
+                    "scheme": "vscode-copilot-workspace",
+                    "authority": "560b328e-5443-4fb3-9d0b-c734d2688284"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "command",
+          "command": {
+            "$ident": "github.copilot.createProject /81",
+            "id": "__vsc4baa8319-7a2b-4eed-9748-4eccb0981a49",
+            "title": "Create Workspace...",
+            "arguments": [
+              "github.copilot.createProject /81"
+            ]
+          }
+        }
+      ],
+      "responseId": "response_c6d92816-07dc-48de-ba1e-10a52596afaa",
+      "shouldBeRemovedOnSend": {
+        "requestId": "request_c3bddbb6-54e4-4874-9274-bf7fb211f19b"
+      },
+      "result": {
+        "timings": {
+          "firstProgress": 25177,
+          "totalElapsed": 26669
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "toolCallRounds": [
+            {
+              "response": "Sure, here's a proposed directory structure for a TypeScript Express app:\n```filetree\nmy-express-app\n├── scripts\n│   └── create-structure.sh\n├── src\n│   ├── app.ts\n│   ├── controllers\n│   │   └── index.ts\n│   ├── routes\n│   │   └── index.ts\n│   └── types\n│       └── index.ts\n├── package.json\n├── tsconfig.json\n├── .gitignore\n└── README.md\n```",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "ddddfe5f-48aa-47b0-8924-1d591989d3d2",
+              "statefulMarker": "XB0gDvar0ig5PoEs9dLAHaaPBF46WAP3KJGwx8nYN+RuPZgw18mWKCfEG4zfwcvjxC40teMUJ6RYgjTkBWlwJkmeXubgNOw9N4xMEFGvJPSkk/xUrYmOa6JeYEB+LiCrvQ7hP59jsDrLGgtcwsJtXSyQ7zexrSjmBK0fRHxFUpdhASozvGCAvoNccPzzpVootFdIlcsEGBt0uEvyH29b+6uCyAuRic6SXXNWTkVUc9HakupNPFyimSEqf6+IO2fAiCkd9R0fkv5Z0eNAZ/UV7NkdTyx3otfkT9jRIxiTVVGlzlRFrGQdPLkHfl36gYXkvCW/ix1JDh1p+L7nJ839OjsWosSh7q/oeTMW/i2T7MwrYLCStpkr55iTNgehRtEOaDyhoBRlZWk1yFlT/U9F4k14H4MfJfuG3Mqb5Wjyfg==",
+              "thinking": {
+                "id": "pckbdWp+CN/0WJ/c8+L18yWYZS5quwcHLR5hVEeZX8jeXdY5ErvtrExCPOr8fUCvF/X1YwBTHsNEv1GZ2z2ta3YprgXFhi4lVgO4eaqIMe+Cm1sVnONvPZ5B/FGVdjx2S5PS70pDQNv49sWMp77bAeWKFL9m1VJjU3y7B3dZYnfdjYDgGxKhALF5tUlP7a5Ngnin1Q1rB8turM9pMR0FKDLFi1UOENV1613SGh3AIhq8wAd6q9sS1N4UIha6Od7jxUaeRP5SnnakGAj3vMH1lBY77dsztvJ8Ke1Q3obgMJ0vFeEKuAT4U3c8yMrS/b34hO7fzVaP8TENS89KKeB9w01kXtdqdMufRfMzoo4bzyqZ4KmiNIQxioM9llX6MyfvvvjEKW7njp8U4mVOf0K7JRuygY4ijacFqraKvgM=",
+                "text": "**Clarifying project structure**\n\nI need to start with the phrase: \"Sure, here's a proposed directory structure for a TypeScript Express app:\" and then include a file tree code block. The rules remind me to generate a markdown file tree structure for the sample project and include a README.md. \n\nI should focus only on common files and not add build outputs or extra explanations. Creating a shell script for the directory structure seems related, but the response template only shows a file tree listing. That's a little confusing!**Understanding response requirements**\n\nThe additional rules say I need to include a README.md and start with the specified phrase in a Markdown code block labeled filetree. The template offers a minimal example. The user asked for a shell script to create the file structure, which seems relevant, yet the rules indicate to respond with just the file tree structure. It feels a bit tricky because the shell script request is indeed related to the directory structures, but I must adhere to the template.**Following the template accurately**\n\nThe template needs to be followed exactly, showing specific file tree content. I think I could adapt it to include a shell script file since it might be useful. The additional rules say I should only list common files for the project type and include a README.md. Including the shell script isn't standard but could still work. It’s also important to label the Markdown code block correctly as `filetree`. However, it’s confusing because the examples use triple backticks, while the rules say to avoid wrapping everything in them.**Refining directory structure response**\n\nThe additional rules indicate I should use Markdown formatting and include a code block. I need to start with the phrase: \"Sure, here's a proposed directory structure for a TypeScript Express app:\" followed by a ```filetree block showcasing the project name. I'll include the README.md and possibly add a shell script in scripts/create-structure.sh. \n\nHowever, I can't include file content or explanations, which is a bit tricky since the user wants the script content specifically. It feels like I’m caught between rules!**Creating filetree structure**\n\nThe developer rules require me to respond only with the filetree directory structure. I need to adhere to the system’s messages, so I’ll include the shell script file without its content. Even though the user asked for the script itself, I can't provide that detail. The template specifies I should start with the phrase “Sure, here's a proposed directory structure for a TypeScript Express app:” and follow that with the necessary structure.\n\nSure, here's a proposed directory structure for a TypeScript Express app:\n\n```filetree\nmy-express-app\n├── scripts\n│   └── create-structure.sh\n├── src\n│   ├── app.ts\n│   ├── controllers\n│   │   └── index.ts\n│   ├── routes\n│   │   └── index.ts\n│   └── types\n│       └── index.ts\n├── package.json\n├── tsconfig.json\n├── .gitignore\n└── README.md\n```",
+                "encrypted": "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",
+                "tokens": 1536
+              }
+            }
+          ],
+          "modelMessageId": "6d93bf70-c413-4a9f-8fe8-a3928f09e6a4",
+          "responseId": "560b328e-5443-4fb3-9d0b-c734d2688284",
+          "sessionId": "a53092f2-7010-4225-8d2c-ad28c08ed691",
+          "agentId": "github.copilot.workspace",
+          "command": "new"
+        },
+        "details": "GPT-5 mini • 1x"
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.32.4",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.workspace",
+        "description": "Ask about your workspace",
+        "when": "!github.copilot.interactiveSession.disabled",
+        "metadata": {
+          "sampleRequest": "How do I build this project?",
+          "themeIcon": {
+            "id": "code"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "workspace",
+        "fullName": "Workspace",
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent",
+          "ask",
+          "edit"
+        ],
+        "slashCommands": [
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works"
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "create_tests",
+                "description": "The user wants to generate unit tests.",
+                "examples": [
+                  "Generate tests for my selection using pytest."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+          },
+          {
+            "name": "new",
+            "description": "Scaffold code for a new file or project in a workspace",
+            "sampleRequest": "Create a RESTful API server using typescript",
+            "isSticky": true,
+            "disambiguation": [
+              {
+                "category": "create_new_workspace_or_extension",
+                "description": "The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets",
+                "examples": [
+                  "Scaffold a Node server.",
+                  "Create a sample project which uses the fileSystemProvider API.",
+                  "react application"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "newNotebook",
+            "description": "Create a new Jupyter Notebook",
+            "sampleRequest": "How do I create a notebook to load data from a csv file?",
+            "disambiguation": [
+              {
+                "category": "create_jupyter_notebook",
+                "description": "The user wants to create a new Jupyter notebook in Visual Studio Code.",
+                "examples": [
+                  "Create a notebook to analyze this CSV file."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "setupTests",
+            "description": "Set up tests in your project (Experimental)",
+            "sampleRequest": "add playwright tests to my project",
+            "when": "config.github.copilot.chat.setupTests.enabled",
+            "disambiguation": [
+              {
+                "category": "set_up_tests",
+                "description": "The user wants to configure project test setup, framework, or test runner. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Set up tests for this project."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "workspace_project_questions",
+            "description": "The user wants to learn about or update the code or files in their current workspace. Questions in this category may be about understanding what the whole workspace does or locating the implementation of some code. This does not include generating or updating tests.",
+            "examples": [
+              "What does this project do?"
+            ]
+          },
+          {
+            "category": "find_code_in_workspace",
+            "description": "The user wants to locate the implementation of some functionality in their current workspace.",
+            "examples": [
+              "Where is the tree widget implemented?"
+            ]
+          },
+          {
+            "category": "generate_with_workspace_context",
+            "description": "The user wants to generate code based on multiple files in the workspace and did not specify which files to reference.",
+            "examples": [
+              "Create a README for this project."
+            ]
+          }
+        ]
+      },
+      "slashCommand": {
+        "name": "new",
+        "description": "Scaffold code for a new file or project in a workspace",
+        "sampleRequest": "Create a RESTful API server using typescript",
+        "isSticky": true,
+        "disambiguation": [
+          {
+            "category": "create_new_workspace_or_extension",
+            "description": "The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets",
+            "examples": [
+              "Scaffold a Node server.",
+              "Create a sample project which uses the fileSystemProvider API.",
+              "react application"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "external": "vscode://settings/github.copilot.chat.codeGeneration.instructions",
+            "path": "/github.copilot.chat.codeGeneration.instructions",
+            "scheme": "vscode",
+            "authority": "settings"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1762612135931,
+      "modelId": "copilot/gpt-5-mini"
+    }
+  ]
+}

@@ -155,6 +155,78 @@ repograph/
 
 ---
 
+## ⚙️ Setup & Installation
+
+### 🔧 Prerequisites
+- Node.js 18+
+- Python 3.10+
+- Docker & Docker Compose (for containerized setup)
+- GitHub Personal Access Token (with repo & read:org scopes)
+
+### 🧩 Environment Variables
+Create a `.env` file at the project root:
+```
+GITHUB_TOKEN=your_github_token_here
+OPENAI_API_KEY=your_openai_key_here
+BACKEND_URL=http://localhost:8000
+FRONTEND_URL=http://localhost:3000
+```
+
+---
+
+### 🐍 Backend Setup (FastAPI)
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app:app --reload
+```
+Backend will start at **http://localhost:8000**.
+
+---
+
+### ⚛️ Frontend Setup (React)
+```bash
+cd frontend
+npm install
+npm start
+```
+Frontend will start at **http://localhost:3000**.
+
+---
+
+### 🐳 Docker Setup (Optional)
+```bash
+docker-compose up --build
+```
+This spins up both backend and frontend containers.
+
+---
+
+## 🧪 Testing
+
+Run unit tests for backend:
+```bash
+pytest --maxfail=1 --disable-warnings -v
+```
+
+For frontend (Jest/React Testing Library):
+```bash
+npm test
+```
+
+---
+
+## 🧭 Contribution Guidelines
+
+1. Fork the repository.
+2. Create a new branch (`feature/your-feature-name`).
+3. Commit your changes.
+4. Submit a Pull Request with a descriptive summary.
+
+---
+
 ## 🏁 Vision
 
 > *RepoGraph aims to become the "Google Maps of Repositories" — helping developers navigate through the complex web of issues, pull requests, and discussions with intelligence, clarity, and speed.*

@@ -9,8 +9,8 @@
 # Root project directory
 PROJECT_NAME="RepoGraph"
 echo "🚀 Creating project structure for $PROJECT_NAME ..."
-mkdir -p $PROJECT_NAME
-cd $PROJECT_NAME
+#mkdir -p $PROJECT_NAME
+#cd $PROJECT_NAME
 
 # ----------------------------------------------------------
 # Root Level Files

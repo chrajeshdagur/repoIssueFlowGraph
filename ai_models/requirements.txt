@@ -1,0 +1,10 @@
+# AI/ML dependencies for ai_models
+transformers>=4.0.0
+sentence-transformers
+torch
+openai
+datasets
+scikit-learn
+numpy
+pandas
+tqdm

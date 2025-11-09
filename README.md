@@ -6,152 +6,93 @@
 
 ## 💡 Overview
 
-**RepoGraph** is an intelligent, developer-focused analytics and visualization platform that automatically generates a **live, interactive dependency graph** of your GitHub **Issues**, **Pull Requests (PRs)**, and **discussions**.
+**RepoIssueFlow-Graph** is an intelligent analytics and visualization platform that automatically generates a **live, interactive dependency graph** of your GitHub **Issues**, **Pull Requests (PRs)**, and **Discussions**.
 
-It helps **maintainers, contributors, and new developers** understand repository relationships, development flow, and issue dependencies — all in one connected, visual interface.
+It helps **maintainers, contributors, and new developers** understand repository relationships, trace development flow, and visualize dependencies — all within a connected, intuitive interface.
 
-By combining **GitHub backlink data**, **D3.js visualization**, and **AI-assisted summarization and recommendations**, RepoGraph empowers teams to manage repositories more effectively, onboard new contributors faster, and make data-driven development decisions.
+By combining **GitHub backlink data**, **AI-powered summarization**, and **D3.js-based visualization**, RepoIssueFlow-Graph turns your repository’s history into actionable insights.
 
 ---
 
 ## 🚀 Core Features
 
 ### 🔗 Interactive Dependency Graph
-- Automatically maps and visualizes the relationships between **Issues**, **PRs**, and **Discussions** using backlinks and references.
-- Displays real-time **connections and dependencies** in a **D3.js-powered timeline graph**.
-- Enables **manual selection or search** of an issue to dynamically generate its dependency view.
+- Automatically maps and visualizes relationships between **Issues**, **PRs**, and **Discussions**.
+- Displays **timeline-based visualizations** of development flow — from issue creation to merge.
+- Supports **manual input** to visualize dependencies for any specific issue.
+- Detects backlinks such as `Fixes #123`, `Related to #456`, and `Depends on #789`.
 
-### 🧠 AI-Assisted Issue Understanding
-- Integrates **AI/NLP models** to process and summarize issue descriptions, PR discussions, and commit messages.
-- Automatically generates:
-  - **Summary** of the issue or PR.
-  - **Impact scope** — files or modules likely affected.
-  - **Smart recommendations** for code areas to modify.
-- Acts as a **Smart Reviewer**, helping new contributors understand context quickly.
+### 🧠 AI-Assisted Issue Intelligence
+- Uses **NLP models** to summarize and interpret issues, PRs, and discussions.
+- Provides:
+  - AI-generated **context summaries**
+  - **Dependency chain explanations**
+  - **Recommendations** for related modules, reviewers, or code areas to modify
+- Learns from **historical PRs** to predict potential file changes and affected components.
 
 ### ⚙️ Developer Workflow Integration
-- **GitHub API integration** to fetch issues, PRs, commits, and backlinks in real time.
-- Option to **embed RepoGraph as a GitHub App** or use it as a **standalone dashboard**.
-- Provides insights for:
-  - Active issues and PRs
-  - Dormant PRs
-  - Recent merges
-  - Review dependencies
+- Real-time **GitHub API integration** (REST + GraphQL) for issues, PRs, and commits.
+- Can run as a **GitHub App** or **standalone dashboard**.
+- Identifies:
+  - **Active / Dormant PRs**
+  - **Review dependencies**
+  - **Recent merges**
+  - **Blocked or stale issues**
 
 ### 🧩 Repository Maintenance Intelligence
-- Assists maintainers with structured recommendations for outdated PRs:
-  - **Request creator closure** (auto-generated polite messages)
-  - **Context analysis** (review comments & commits)
-  - **Maintainer closure recommendation** (AI-generated reasoning)
+- AI suggests closure or escalation for inactive PRs.
+- Structured workflow for PR lifecycle management:
+  1. Notify PR creator for closure.
+  2. Escalate to maintainer if needed.
+  3. Suggest archival for valuable discussions.
+- Detects **merge bottlenecks**, **critical dependencies**, and **stale threads**.
 
 ---
 
-## 📊 Visualization Highlights
+## 📊 Visualization Modes
 
 | Mode | Description |
 |------|--------------|
-| **Graph Mode** | Node-link graph showing Issue–PR relationships |
-| **Timeline Mode** | Chronological flow of creation, PRs, and merges |
-| **Cluster Mode** | Groups related issues by tags or milestones |
+| **Graph Mode** | Node-link graph showing issue–PR relationships. |
+| **Timeline Mode** | Chronological visualization of issue evolution and merge flow. |
+| **Cluster Mode** | Groups related issues by labels, milestones, or modules. |
 
-**Visual Legend:**
-- 🟢 Issue (Open)
-- 🔵 PR (Merged)
-- 🟣 Discussion
-- 🔺 Active Work
-- ⚪ Closed Node
+**Legend:**  
+🟢 Issue (Open) | 🔵 PR (Merged) | 🟣 Discussion | 🔺 Active Work | ⚪ Closed Node
 
 ---
 
-## 🧱 Tech Stack
+## 🧠 AI/ML Components
+
+| Component | Purpose |
+|------------|----------|
+| **Text Summarization** | Extracts concise summaries for issues, PRs, and discussions. |
+| **Entity Extraction** | Identifies relevant files, modules, or subsystems. |
+| **Change Recommendation** | Suggests probable code areas to modify. |
+| **Reviewer Prediction** | Recommends reviewers based on ownership and commit history. |
+| **PR Maintenance AI** | Suggests closure or follow-up actions for inactive PRs. |
+
+---
+
+## 🎯 Target Users
+
+1. **New Contributors** – Quickly grasp context and find beginner-friendly issues.  
+2. **Project Maintainers** – Visualize repository health, critical dependencies, and PR flow.  
+3. **Code Reviewers** – Trace linked issues and changes for efficient review.  
+4. **Open Source Teams** – Manage work coordination and reduce redundant efforts.  
+
+---
+
+## 🧩 Tech Stack
 
 | Layer | Technology |
 |-------|-------------|
-| **Frontend** | React + D3.js + Tailwind CSS |
-| **Backend** | Node.js / FastAPI |
-| **Database** | MongoDB / PostgreSQL |
-| **AI Layer** | OpenAI GPT / HuggingFace Transformers |
-| **GitHub Integration** | GitHub REST + GraphQL APIs |
-| **Visualization** | D3.js / Cytoscape.js |
-| **Deployment** | Docker + Kubernetes |
-
----
-
-## 🤖 AI/ML Components
-
-| Feature | Description |
-|----------|--------------|
-| **Text Summarization** | Concise summaries for issues, PRs, and discussions |
-| **Entity Extraction** | Detects relevant modules/files |
-| **Change Recommendation Engine** | Suggests code areas for modification |
-| **PR Maintenance AI** | Suggests closure/follow-up actions based on context |
-
----
-
-## 🎯 Use Cases
-
-1. **For New Contributors:** Quickly understand issues, related work, and next steps.
-2. **For Maintainers:** Visualize repository state and manage outdated PRs.
-3. **For Teams:** Review collaboration flow and technical dependencies visually.
-
----
-
-## 🧩 Future Enhancements
-
-- Support for **GitLab**, **Bitbucket**, and **Azure Repos**
-- **AI-based code diff summarization** for PRs
-- **Automated issue prioritization** based on activity
-- **Slack / Teams integration** for live updates
-- **GitHub Action** for visual report generation
-
----
-
-## 🧭 Example User Flow
-
-1. User logs in with GitHub OAuth.
-2. Selects a repository.
-3. RepoGraph fetches issues, PRs, and backlinks.
-4. D3.js dependency graph is generated dynamically.
-5. User clicks a node → AI analysis summary appears.
-6. Contributor/maintainer takes next steps (comment, PR, or closure).
-
----
-
-## 📂 Directory Structure
-
-```
-repograph/
-├── backend/
-│   ├── app.py                 # FastAPI backend entry point
-│   ├── routes/
-│   │   ├── github_api.py      # GitHub API integration
-│   │   ├── ai_analysis.py     # AI summarization endpoints
-│   │   └── graph_builder.py   # Dependency graph generator
-│   ├── services/
-│   │   ├── nlp_service.py     # Text summarization and entity extraction
-│   │   └── github_service.py  # Repo data fetch logic
-│   └── requirements.txt       # Backend dependencies
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── GraphView.jsx  # D3.js graph component
-│   │   │   ├── IssuePanel.jsx # Side panel with AI summary
-│   │   │   └── Navbar.jsx     # App navigation bar
-│   │   ├── pages/
-│   │   │   ├── Dashboard.jsx  # Main dashboard
-│   │   │   └── Maintenance.jsx# PR maintenance insights
-│   │   ├── styles/
-│   │   │   └── main.css       # Tailwind customizations
-│   │   ├── App.jsx
-│   │   └── index.js
-│   └── package.json
-│
-├── docker-compose.yml         # Container setup for frontend/backend
-├── README.md                  # Project overview
-├── .env.example               # Example environment variables
-└── LICENSE
-```
+| **Frontend** | React, D3.js, Tailwind CSS |
+| **Backend** | FastAPI / Node.js |
+| **Database** | PostgreSQL / MongoDB |
+| **AI Layer** | OpenAI GPT, HuggingFace Transformers |
+| **Integration** | GitHub REST & GraphQL APIs |
+| **Deployment** | Docker, Kubernetes |
 
 ---
 
@@ -160,31 +101,26 @@ repograph/
 ### 🔧 Prerequisites
 - Node.js 18+
 - Python 3.10+
-- Docker & Docker Compose (for containerized setup)
-- GitHub Personal Access Token (with repo & read:org scopes)
+- Docker & Docker Compose
+- GitHub Personal Access Token with `repo` and `read:org` scopes
 
 ### 🧩 Environment Variables
-Create a `.env` file at the project root:
-```
+Create a `.env` file at the root of the project:
+```bash
 GITHUB_TOKEN=your_github_token_here
 OPENAI_API_KEY=your_openai_key_here
 BACKEND_URL=http://localhost:8000
 FRONTEND_URL=http://localhost:3000
 ```
 
----
-
 ### 🐍 Backend Setup (FastAPI)
 ```bash
 cd backend
 python3 -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app:app --reload
 ```
-Backend will start at **http://localhost:8000**.
-
----
 
 ### ⚛️ Frontend Setup (React)
 ```bash
@@ -192,41 +128,67 @@ cd frontend
 npm install
 npm start
 ```
-Frontend will start at **http://localhost:3000**.
-
----
 
 ### 🐳 Docker Setup (Optional)
 ```bash
 docker-compose up --build
 ```
-This spins up both backend and frontend containers.
 
 ---
 
 ## 🧪 Testing
 
-Run unit tests for backend:
+### Backend
 ```bash
 pytest --maxfail=1 --disable-warnings -v
 ```
 
-For frontend (Jest/React Testing Library):
+### Frontend
 ```bash
 npm test
 ```
 
 ---
 
-## 🧭 Contribution Guidelines
+## 🧭 Example User Flow
 
-1. Fork the repository.
-2. Create a new branch (`feature/your-feature-name`).
-3. Commit your changes.
-4. Submit a Pull Request with a descriptive summary.
+1. Login via **GitHub OAuth**.  
+2. Select a repository.  
+3. System fetches issues, PRs, and backlinks.  
+4. Dependency graph auto-generates with D3.js.  
+5. Click a node → see AI-powered context summary.  
+6. Contributor or maintainer acts (comment, PR, closure, etc.).  
+
+---
+
+## 🧭 Contribution Workflow
+
+1. Fork the repository.  
+2. Create a new branch (`feature/your-feature-name`).  
+3. Commit and push your changes.  
+4. Open a Pull Request with a clear summary.  
+
+---
+
+## 📈 Success Metrics
+
+- Reduced onboarding time for new contributors.  
+- Faster issue resolution and merge cycles.  
+- Fewer redundant or stale PRs.  
+- Improved repository transparency.  
+
+---
+
+## 🧩 Future Enhancements
+
+- Integration with **GitLab**, **Bitbucket**, and **Azure Repos**.  
+- AI-based **code diff summarization** for PRs.  
+- Automated **issue prioritization** based on activity metrics.  
+- **Slack / Teams** notifications for repository updates.  
+- **GitHub Actions** for automated visual report generation.  
 
 ---
 
 ## 🏁 Vision
 
-> *RepoGraph aims to become the "Google Maps of Repositories" — helping developers navigate through the complex web of issues, pull requests, and discussions with intelligence, clarity, and speed.*
+> *RepoIssueFlow-Graph aspires to be the “Google Maps of Repositories” — helping developers navigate, understand, and optimize their software ecosystem with intelligence, clarity, and insight.*

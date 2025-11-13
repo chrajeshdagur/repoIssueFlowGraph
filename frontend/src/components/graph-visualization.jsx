@@ -5,6 +5,7 @@ import * as d3 from "d3"
 
 export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
   const svgRef = useRef()
+  const zoomRef = useRef(null)
 
   const data = {
     name: "Issue #102",
@@ -50,11 +51,36 @@ export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
     const svg = d3.select(svgRef.current)
     svg.selectAll("*").remove()
 
-    const g = svg.append("g").attr("transform", `translate(${width / 2},${height / 2})`)
+    const g = svg.append("g").attr("class", "main-group")
 
-    const tree = d3.tree().size([width - 100, height - 100])
+    const zoom = d3.zoom().on("zoom", (event) => {
+      g.attr("transform", event.transform)
+    })
+
+    zoomRef.current = zoom
+    svg.call(zoom)
+
+    // Create tree layout
+    const tree = d3.tree().size([width - 200, height - 200])
     const root = d3.hierarchy(data)
     const treeData = tree(root)
+
+    const nodes_array = treeData.descendants()
+    const xs = nodes_array.map((d) => d.x)
+    const ys = nodes_array.map((d) => d.y)
+    const minX = Math.min(...xs)
+    const maxX = Math.max(...xs)
+    const minY = Math.min(...ys)
+    const maxY = Math.max(...ys)
+    const treeWidth = maxX - minX
+    const treeHeight = maxY - minY
+
+    // Center the tree in the middle of the SVG
+    const offsetX = width / 2 - (minX + treeWidth / 2)
+    const offsetY = height / 2 - (minY + treeHeight / 2)
+    const initialTransform = d3.zoomIdentity.translate(offsetX, offsetY)
+
+    svg.call(zoom.transform, initialTransform)
 
     const links = g
       .selectAll("line")
@@ -113,15 +139,114 @@ export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
       .text((d) => d.data.name)
   }, [onNodeClick, selectedNodeId])
 
+  const handleZoomIn = () => {
+    if (!svgRef.current || !zoomRef.current) return
+    d3.select(svgRef.current).transition().duration(100).call(zoomRef.current.scaleBy, 1.3)
+  }
+
+  const handleZoomOut = () => {
+    if (!svgRef.current || !zoomRef.current) return
+    d3.select(svgRef.current).transition().duration(100).call(zoomRef.current.scaleBy, 0.7)
+  }
+
+  const handleResetZoom = () => {
+    if (!svgRef.current || !zoomRef.current) return
+    const width = svgRef.current.clientWidth
+    const height = svgRef.current.clientHeight
+
+    const nodes_array = d3.selectAll("circle").data()
+    const xs = nodes_array.map((d) => d.x)
+    const ys = nodes_array.map((d) => d.y)
+    const minX = Math.min(...xs)
+    const maxX = Math.max(...xs)
+    const minY = Math.min(...ys)
+    const maxY = Math.max(...ys)
+    const treeWidth = maxX - minX
+    const treeHeight = maxY - minY
+
+    const offsetX = width / 2 - (minX + treeWidth / 2)
+    const offsetY = height / 2 - (minY + treeHeight / 2)
+    const initialTransform = d3.zoomIdentity.translate(offsetX, offsetY)
+
+    d3.select(svgRef.current).transition().duration(100).call(zoomRef.current.transform, initialTransform)
+  }
+
   return (
-    <svg
-      ref={svgRef}
-      style={{
-        width: "100%",
-        height: "100%",
-        backgroundColor: "#0f1419",
-        borderRadius: "8px",
-      }}
-    />
+    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+      <svg
+        ref={svgRef}
+        style={{
+          width: "100%",
+          height: "100%",
+          backgroundColor: "#0f1419",
+          borderRadius: "8px",
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          bottom: "20px",
+          right: "20px",
+          display: "flex",
+          gap: "8px",
+          flexDirection: "column",
+        }}
+      >
+        <button
+          onClick={handleZoomIn}
+          style={{
+            padding: "8px 12px",
+            backgroundColor: "#3b82f6",
+            color: "#ffffff",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+            fontSize: "14px",
+            fontWeight: "600",
+            transition: "background-color 0.2s",
+          }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = "#2563eb")}
+          onMouseOut={(e) => (e.target.style.backgroundColor = "#3b82f6")}
+        >
+          + Zoom In
+        </button>
+        <button
+          onClick={handleZoomOut}
+          style={{
+            padding: "8px 12px",
+            backgroundColor: "#3b82f6",
+            color: "#ffffff",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+            fontSize: "14px",
+            fontWeight: "600",
+            transition: "background-color 0.2s",
+          }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = "#2563eb")}
+          onMouseOut={(e) => (e.target.style.backgroundColor = "#3b82f6")}
+        >
+          - Zoom Out
+        </button>
+        <button
+          onClick={handleResetZoom}
+          style={{
+            padding: "8px 12px",
+            backgroundColor: "#6b7280",
+            color: "#ffffff",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+            fontSize: "14px",
+            fontWeight: "600",
+            transition: "background-color 0.2s",
+          }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = "#4b5563")}
+          onMouseOut={(e) => (e.target.style.backgroundColor = "#6b7280")}
+        >
+          Reset
+        </button>
+      </div>
+    </div>
   )
 }

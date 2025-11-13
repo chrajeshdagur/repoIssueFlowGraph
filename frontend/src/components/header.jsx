@@ -1,8 +1,13 @@
+import RepoIssueFlowIcon from "./icon"
+
 export default function Header() {
   return (
     <header style={styles.header}>
       <div style={styles.container}>
-        <h1 style={styles.title}>RepolssueFlow-Graph</h1>
+        <div style={styles.branding}>
+          <RepoIssueFlowIcon />
+          <h1 style={styles.title}>RepoIssueFlow-Graph</h1>
+        </div>
         <nav style={styles.nav}>
           <a href="#" style={styles.link}>
             Dashboard
@@ -31,6 +36,11 @@ const styles = {
     alignItems: "center",
     maxWidth: "1600px",
     margin: "0 auto",
+  },
+  branding: {
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
   },
   title: {
     fontSize: "28px",

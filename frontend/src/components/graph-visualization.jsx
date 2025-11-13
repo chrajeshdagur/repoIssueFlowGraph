@@ -3,11 +3,11 @@
 import { useEffect, useRef } from "react"
 import * as d3 from "d3"
 
-export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
+export default function GraphVisualization({ onNodeClick, selectedNodeId, treeData, isLoading, filters }) {
   const svgRef = useRef()
   const zoomRef = useRef(null)
 
-  const data = {
+  const data = treeData || {
     name: "Issue #102",
     id: "#102",
     type: "issue",
@@ -42,8 +42,30 @@ export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
     return colors[type] || colors.default
   }
 
+  const filterNodes = (node) => {
+    if (node.type === "issue" && !filters.issues) return false
+    if (node.type === "pr" && !filters.prs) return false
+    if (node.type === "discussion" && !filters.discussions) return false
+    return true
+  }
+
+  const getFilteredTree = (node) => {
+    if (!filterNodes(node)) return null
+
+    const filteredChildren = (node.children || [])
+      .map((child) => getFilteredTree(child))
+      .filter((child) => child !== null)
+
+    return {
+      ...node,
+      children: filteredChildren,
+    }
+  }
+
+  const filteredData = getFilteredTree(data)
+
   useEffect(() => {
-    if (!svgRef.current) return
+    if (!svgRef.current || !filteredData) return
 
     const width = svgRef.current.clientWidth
     const height = svgRef.current.clientHeight
@@ -62,7 +84,7 @@ export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
 
     // Create tree layout
     const tree = d3.tree().size([width - 200, height - 200])
-    const root = d3.hierarchy(data)
+    const root = d3.hierarchy(filteredData)
     const treeData = tree(root)
 
     const nodes_array = treeData.descendants()
@@ -111,10 +133,9 @@ export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
           id: d.data.id,
           title: d.data.name,
           type: d.data.type,
-          summary: `Details about ${d.data.name}...`,
+          summary: d.data.summary || `Details about ${d.data.name}...`,
           dependencies: d.data.children || [],
-          suggestedFix: "Modify src/api/auth.js",
-          reviewer: "@rajesh-dagur",
+          url: d.data.url || "#",
         })
       })
       .on("mouseover", (event, d) => {
@@ -137,7 +158,7 @@ export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
       .attr("font-size", "12px")
       .attr("font-weight", "600")
       .text((d) => d.data.name)
-  }, [onNodeClick, selectedNodeId])
+  }, [onNodeClick, selectedNodeId, filteredData, filters])
 
   const handleZoomIn = () => {
     if (!svgRef.current || !zoomRef.current) return
@@ -169,6 +190,32 @@ export default function GraphVisualization({ onNodeClick, selectedNodeId }) {
     const initialTransform = d3.zoomIdentity.translate(offsetX, offsetY)
 
     d3.select(svgRef.current).transition().duration(100).call(zoomRef.current.transform, initialTransform)
+  }
+
+  if (isLoading) {
+    return (
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <svg
+          ref={svgRef}
+          style={{
+            width: "100%",
+            height: "100%",
+            backgroundColor: "#0f1419",
+            borderRadius: "8px",
+          }}
+        />
+        <div style={{ position: "absolute", color: "#e0e0e0", fontSize: "16px" }}>Loading issue data...</div>
+      </div>
+    )
   }
 
   return (

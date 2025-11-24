@@ -1,0 +1,74 @@
+/* src/components/footer.css */
+
+/* The import statement was causing parse errors. It doesn't belong here. */
+
+/* You would typically define CSS rules in this file. For example: */
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+    background: #161b22;
+    border-top: 1px solid #30363d;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-section h4 {
+    color: #e6edf3;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-section a:hover {
+    color: #58a6ff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #30363d;
+    padding-top: 24px;
+    text-align: center;
+    color: #6e7681;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: #8b949e;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #58a6ff;
+}

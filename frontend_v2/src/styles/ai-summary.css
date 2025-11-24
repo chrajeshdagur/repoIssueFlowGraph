@@ -1,0 +1,126 @@
+.ai-summary-section {
+  margin-top: 60px;
+  padding: 40px 16px;
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+  border-top: 1px solid #30363d;
+  border-bottom: 1px solid #30363d;
+}
+
+.ai-summary-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ai-summary-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.ai-summary-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e6edf3;
+  margin: 0;
+}
+
+.ai-badge {
+  background: linear-gradient(135deg, #58a6ff 0%, #388bfd 100%);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.ai-summary-content {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.ai-placeholder {
+  text-align: center;
+}
+
+.ai-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.ai-placeholder h3 {
+  font-size: 1.3rem;
+  color: #e6edf3;
+  margin: 0 0 8px 0;
+}
+
+.ai-placeholder p {
+  color: #8b949e;
+  font-size: 0.95rem;
+  margin: 0 0 32px 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ai-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.ai-feature {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.ai-feature:hover {
+  border-color: #58a6ff;
+  background: rgba(88, 166, 255, 0.05);
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.ai-feature strong {
+  display: block;
+  color: #e6edf3;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.ai-feature p {
+  color: #8b949e;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .ai-summary-section {
+    padding: 24px 16px;
+    margin-top: 40px;
+  }
+
+  .ai-summary-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .ai-summary-content {
+    padding: 20px;
+  }
+
+  .ai-features {
+    grid-template-columns: 1fr;
+  }
+}

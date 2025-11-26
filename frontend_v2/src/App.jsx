@@ -12,11 +12,9 @@ export default function App() {
   return (
     <div className="app-container">
       <Navbar />
-      <main className="main-content">
-        <AdvancedRepoGraph />
-        <AISummary />
-        <Footer />
-      </main>
+      <AdvancedRepoGraph />
+      <AISummary />
+      <Footer />
     </div>
   )
 }

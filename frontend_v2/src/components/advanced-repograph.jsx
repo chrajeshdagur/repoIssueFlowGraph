@@ -1,3 +1,21 @@
+/**
+ * advanced-repograph.jsx
+ *
+ * Clean, modern React + D3 component implementing the enhanced RepoGraph UI:
+ * - Sidebar tabs: Filters / Display / Analytics
+ * - Timeline multi-depth graph (issues + PR swimlane)
+ * - Filters, depth slider, critical path, clusters, analytics (gravity wells)
+ *
+ * Usage:
+ *   import AdvancedRepoGraph from './advanced-repograph.jsx';
+ *   <AdvancedRepoGraph />
+ *
+ * Dependencies: react, d3
+ *
+ * Note: This component expects CSS similar to repograph_enhanced_v1.html.
+ * You can reuse that CSS or adapt your own styles.
+ */
+
 "use client"
 
 import { useState, useEffect, useRef } from "react"
@@ -430,9 +448,7 @@ const AdvancedRepoGraph = () => {
           </button>
         </div>
         <div className="input-info">
-          💡 Enter: <code>owner/repo</code> (e.g., <code>torvalds/linux</code>) or a direct issue/PR URL
-          <br />
-          ⚠️ Public repos only (no auth needed).
+          💡 Enter: <code>owner/repo</code> (e.g., <code>torvalds/linux</code>) or a direct issue/PR URL like <code>https://github.com/owner/repo/issues/123</code>, Public repos only (no auth needed).
         </div>
         {error && <div className="error-box">❌ {error}</div>}
       </div>
@@ -441,15 +457,9 @@ const AdvancedRepoGraph = () => {
         <div className="canvas-wrapper">
           <div className="canvas-toolbar">
             <div className="zoom-controls">
-              <button className="btn small" onClick={() => handleZoom(1.3)}>
-                🔍+ Zoom In
-              </button>
-              <button className="btn small" onClick={() => handleZoom(0.77)}>
-                🔍- Zoom Out
-              </button>
-              <button className="btn small secondary" onClick={handleResetZoom}>
-                ⟲ Reset
-              </button>
+              <button className="btn small" onClick={() => handleZoom(1.3)}>🔍+ </button>
+              <button className="btn small" onClick={() => handleZoom(0.77)}>🔍- </button>
+              <button className="btn small secondary" onClick={handleResetZoom}>⟲ Reset</button>
             </div>
             <select value={layoutMode} onChange={handleLayoutChange} className="select-control">
               <option value="timeline">Timeline</option>

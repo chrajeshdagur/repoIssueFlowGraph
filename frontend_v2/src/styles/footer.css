@@ -1,9 +1,3 @@
-/* src/components/footer.css */
-
-/* The import statement was causing parse errors. It doesn't belong here. */
-
-/* You would typically define CSS rules in this file. For example: */
-
 .footer {
   background-color: #f0f0f0;
   padding: 20px;

@@ -1,21 +1,3 @@
-/**
- * advanced-repograph.jsx
- *
- * Clean, modern React + D3 component implementing the enhanced RepoGraph UI:
- * - Sidebar tabs: Filters / Display / Analytics
- * - Timeline multi-depth graph (issues + PR swimlane)
- * - Filters, depth slider, critical path, clusters, analytics (gravity wells)
- *
- * Usage:
- *   import AdvancedRepoGraph from './advanced-repograph.jsx';
- *   <AdvancedRepoGraph />
- *
- * Dependencies: react, d3
- *
- * Note: This component expects CSS similar to repograph_enhanced_v1.html.
- * You can reuse that CSS or adapt your own styles.
- */
-
 "use client"
 
 import { useState, useEffect, useRef } from "react"

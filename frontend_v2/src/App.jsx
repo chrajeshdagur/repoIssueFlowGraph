@@ -2,6 +2,9 @@
 import Navbar from "./components/navbar"
 import Header from "./components/header"
 import AdvancedRepoGraph from "./components/advanced-repograph"
+import AdvancedRepoGraph2 from "./components/advanced-repograph2"
+import AdvancedRepoGraph3 from "./components/advanced-repograph3"
+import AdvancedRepoGraph4 from "./components/advanced-repograph4"
 import AISummary from "./components/ai-summary"
 import Footer from "./components/footer"
 import "./App.css"
@@ -13,6 +16,9 @@ export default function App() {
     <div className="app-container">
       <Navbar />
       <AdvancedRepoGraph />
+      <AdvancedRepoGraph2 />
+      <AdvancedRepoGraph3 />
+      <AdvancedRepoGraph4 />
       <AISummary />
       <Footer />
     </div>

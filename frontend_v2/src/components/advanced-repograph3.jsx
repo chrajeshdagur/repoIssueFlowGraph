@@ -565,7 +565,7 @@ export default function AdvancedRepoGraph({ initialData = SAMPLE_DATA }) {
      Render main component
      ------------------------- */
   return (
-    <div className="repograph-root" style={{ minWidth: 980 }}>
+    <div className="repograph-root repograph-container" style={{ minWidth: 980 }}>
       <div className="repograph-header">
         <div style={{ flex:1 }}>
           <h2 className="repograph-title">RepoGraph — Timeline Depth View</h2>

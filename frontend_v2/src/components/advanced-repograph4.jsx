@@ -391,7 +391,7 @@ export default function AdvancedRepoGraph3({ initialData = SAMPLE }) {
 
   /* render UI */
   return (
-    <div className="adv-root">
+    <div className="adv-root repograph-container">
       <div className="adv-header">
         <div>
           <div className="adv-title">RepoGraph — Timeline Depth</div>

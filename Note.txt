@@ -12,3 +12,7 @@
 	- step 2.1 Ai calculation: use AI brain to give best out of best solution. with best LLM model or create own or use the other one.
 	- step 3: result the summary and optimial solution hint, filename to make changes or create new, and next step to give an hint or complete solution to fix the issue.
 
+    Feat: - Create your own LLM which will, which will refine the question first, you can sepak also in general language, 
+        the it will write a very professional question of your thought before start answer, you can edit your question and again-2 system will 
+            keep the versin of your question, once you question is ready only then it will answer, you first try to implement such UI interface in issueflow first, 
+                then got for your seperate model. a later design a model will use your local system power and resources to answer queations.

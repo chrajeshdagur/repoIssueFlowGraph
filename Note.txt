@@ -1,0 +1,14 @@
+## repoGRaph
+	- feat: UI only for single issue based analysis and pull recent last week data pull or customizable data to pull and render
+	- feat: multi layered graph for easyunderstanding 
+	- feat: side 
+	- feat: in d3 graph follow the timeline of issue trail and depth/depadency from start to end picture (start --> closed with merge(purple) or without merge (red))
+	- about graph infor in UI to make every one understand in two three words
+	- what ever you've collected, make sure all the data and graphs, connect the dot with 
+
+## hwo the ai/ml analysis wortk
+	- step 1: Context: everytime first understand the context of project and purpose, store in catche and update info on any changes.
+	- step 2: read thread: it will fetch all the comment and discussion data for related issue/pr then go for AI model analysis
+	- step 2.1 Ai calculation: use AI brain to give best out of best solution. with best LLM model or create own or use the other one.
+	- step 3: result the summary and optimial solution hint, filename to make changes or create new, and next step to give an hint or complete solution to fix the issue.
+

@@ -12,6 +12,13 @@ It helps **maintainers, contributors, and new developers** understand repository
 
 By combining **GitHub backlink data**, **AI-powered summarization**, and **D3.js-based visualization**, RepoIssueFlow-Graph turns your repository’s history into actionable insights.
 
+📊 IssueFlow – Repository Issue & PR Dependency Graph
+
+Interactive, timeline-based visualization of GitHub Issues, Pull Requests, and full cross-reference relationships.
+
+IssueFlow transforms complex GitHub repositories into a clear, visual graph that shows how Issues, Pull Requests, comments, mentions, and backlinks are connected across time. It reveals development flow, dependencies, blockers, clusters, and engineering bottlenecks—all at a glance.
+
+IssueFlow is especially useful for maintainers, engineering managers, and contributors who want deep visibility into how work actually flows within a repo.
 ---
 
 ## 🚀 Core Features
@@ -95,6 +102,17 @@ By combining **GitHub backlink data**, **AI-powered summarization**, and **D3.js
 | **Deployment** | Docker, Kubernetes |
 
 ---
+
+| Layer                 | Technology                             |
+| --------------------- | -------------------------------------- |
+| **Frontend**          | React, D3.js, Tailwind CSS             |
+| **Backend**           | FastAPI / Node.js                      |
+| **Database**          | PostgreSQL, Redis, PGVector            |
+| **Optional Graph DB** | RedisGraph, Neo4j                      |
+| **AI Layer**          | OpenAI GPT, HuggingFace, Custom Models |
+| **Integration**       | GitHub REST + GraphQL                  |
+| **Deployment**        | Docker, Kubernetes                     |
+
 
 ## ⚙️ Setup & Installation
 

@@ -13,6 +13,8 @@ It helps **maintainers, contributors, and new developers** understand repository
 By combining **GitHub backlink data**, **AI-powered summarization**, and **D3.js-based visualization**, RepoIssueFlow-Graph turns your repository’s history into actionable insights.
 
 📊 IssueFlow – Repository Issue & PR Dependency Graph
+<img width="1422" height="788" alt="image" src="https://github.com/user-attachments/assets/b9185d7e-edde-4ef0-b3ba-132a0780fe24" />
+
 
 Interactive, timeline-based visualization of GitHub Issues, Pull Requests, and full cross-reference relationships.
 

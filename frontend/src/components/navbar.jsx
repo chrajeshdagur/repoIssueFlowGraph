@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="project-info">
               <span className="project-icon">🕸️</span>
               <div>
-                <h1>IssueFlow-Graph</h1>
+                <h1>IssueFlow</h1>
                 <p>Issue workflow visualizer</p>
               </div>
             </div>

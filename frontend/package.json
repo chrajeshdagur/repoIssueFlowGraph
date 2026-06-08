@@ -37,6 +37,7 @@
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.22",
+    "baseline-browser-mapping": "^2.10.34",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.17",
     "typescript": "^5",

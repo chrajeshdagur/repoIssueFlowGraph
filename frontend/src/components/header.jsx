@@ -3,6 +3,7 @@ import "../styles/header.css";
 
 export default function Header({ onLoadGraph, onLoadSample }) {
   const [repoInput, setRepoInput] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = () => {
     if (!repoInput.trim()) return;
@@ -45,6 +46,7 @@ export default function Header({ onLoadGraph, onLoadSample }) {
           <code>https://github.com/owner/repo/issues/123</code>.
           Public repositories only.
         </div>
+        {error && <div className="error-box">❌ {error}</div>}
       </div>
     </div>
   );

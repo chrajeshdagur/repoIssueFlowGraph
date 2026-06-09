@@ -412,18 +412,7 @@ const AdvancedRepoGraph = () => {
 
   return (
     <div className="repograph-container">
-      <div className="repograph-input-section">
-        <div className="input-row">
-          <input type="text" className="input-field" placeholder="owner/repo (e.g., facebook/react) OR GitHub Issue/PR URL" value={repoInput} onChange={(e) => setRepoInput(e.target.value)} onKeyPress={(e) => e.key === "Enter" && handleLoadRepo()} /> 
-          <button className="btn" onClick={handleLoadRepo}> Load Graph </button> 
-          <button className="btn secondary small" onClick={handleLoadSample}> 📌 Load Sample </button>
-        </div>
-        <div className="input-info">
-          💡 Enter: <code>owner/repo</code> (e.g., <code>torvalds/linux</code>) or a direct issue/PR URL like <code>https://github.com/owner/repo/issues/123</code>, Public repos only (no auth needed).
-        </div>
-        {error && <div className="error-box">❌ {error}</div>}
-      </div>
-
+   
       <div className="main-layout">
         <div className="canvas-wrapper">
           <div className="canvas-toolbar">
